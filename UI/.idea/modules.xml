@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/9992.iml" filepath="$PROJECT_DIR$/.idea/9992.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../信息安全系统设计/.idea/信息安全系统设计.iml" filepath="$PROJECT_DIR$/../信息安全系统设计/.idea/信息安全系统设计.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../新建文件夹/.idea/新建文件夹.iml" filepath="$PROJECT_DIR$/../新建文件夹/.idea/新建文件夹.iml" />
+    </modules>
+  </component>
+</project>

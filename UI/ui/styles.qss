@@ -1,0 +1,96 @@
+/* 基础窗口样式 */
+QMainWindow {
+    background-color: #ADD8E6;
+}
+
+QWidget {
+    font-family: 'Pacifico', cursive;
+    font-size: 17px;
+    color: #000000; /* 更柔和的文字颜色 */
+}
+
+/* centralWidget背景图片样式 - 新增规则应放在这里 */
+#centralwidget {
+    background-image: url("UI/ui/UAV.jpg");
+    background-color: rgba(255, 255, 255, 0.5);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content;
+    background-attachment: fixed;
+     background-size: cover;
+}
+/* QLabel样式 */
+QLabel {
+    margin-bottom: 10px; /* 增大行间距 */
+}
+/* QLineEdit样式 */
+QLineEdit {
+    padding: 16px 18px;
+    border: 2px solid #FFC107; /* 边框更细，颜色更柔和 */
+    border-radius: 18px; /* 圆角更大，现代感更强 */
+    background-color: #FFFDE7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1; /* 添加轻微阴影 */
+}
+
+/* QPushButton样式 - 增强立体感 */
+QPushButton {
+    min-width: 100px;
+    padding: 18px 24px;
+    border-radius: 24px;
+    background-color: #FF5722;
+    color: #fff;
+    font-weight: bold;
+    /* 加强阴影效果以模拟立体感 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+QPushButton:hover {
+    background-color: #005cbf;
+    /* 鼠标悬停时进一步增强阴影 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+QPushButton:pressed {
+    background-color: #0056b3;
+    /* 按下时减少阴影并轻微改变位置，模拟按下效果 */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+/* QRadioButton样式 */
+QRadioButton {
+    spacing: 10px;
+}
+QRadioButton::indicator {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px; /* 更大的圆角 */
+    background-color: transparent; /* 透明背景，只显示边框 */
+    border: 2px solid #dee2e6;
+}
+QRadioButton::indicator:checked {
+    border: none;
+    background-color: #007bff;
+}
+
+/* QComboBox样式 */
+QComboBox {
+    padding: 16px 18px;
+    border: 2px solid #dee2e6;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;h'y'y
+    subcontrol-position: top right;
+    width: 30px;
+    border-left-width: 2px;
+    border-left-color: #dee2e6;
+    border-left-style: solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+QComboBox QAbstractItemView {
+    border: 2px solid #dee2e6;
+    selection-background-color: rgba(0, 123, 255, 0.1); /* 透明度高的选中背景 */
+}
