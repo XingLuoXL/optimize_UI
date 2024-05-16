@@ -159,8 +159,8 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(widget, row, column, rowSpan, columnSpan)
 
         # 设置布局的拉伸因子,先用零
-        self.gridLayout.setRowStretch(row, 0)
-        self.gridLayout.setColumnStretch(column, 0)
+        self.gridLayout.setRowStretch(row, 20)
+        self.gridLayout.setColumnStretch(column, 20)
         
         # 将创建的控件保存到self对象的属性中（这要是我写得代码就不用这个来处理了）
         setattr(self, objectName, widget)
@@ -205,8 +205,13 @@ class Ui_MainWindow(object):
         self.createAndAddWidgetToGridLayout(QtWidgets.QRadioButton, "radioButton_6", 4, 2, 1, 1)
         self.createAndAddWidgetToGridLayout(QtWidgets.QLineEdit, "lineEdit_2", 5, 1, 1, 1)
         self.createAndAddWidgetToGridLayout(QtWidgets.QLineEdit, "lineEdit_3", 6, 1, 1, 1)
-        self.createAndAddWidgetToGridLayout(QtWidgets.QPushButton, "pushButton", 7, 0, 1, 1)
-    
+        self.createAndAddWidgetToGridLayout(QtWidgets.QPushButton, "pushButton", 7, 1, 1, 1)
+
+        #调整文本框长度
+        self.lineEdit.setFixedWidth(200)
+        self.lineEdit_2.setFixedWidth(200)
+        self.lineEdit_3.setFixedWidth(300) 
+        
         # 创建两个按钮组
         self.buttonGroup1 = QtWidgets.QButtonGroup(self.centralwidget)
         self.buttonGroup2 = QtWidgets.QButtonGroup(self.centralwidget)
