@@ -294,7 +294,7 @@ class Ui_MainWindow(object):
 
         def loadStyleSheet(filename):
             """加载外部QSS文件"""
-            with open('UI/ui/styles.qss', 'r',encoding='utf-8') as file:
+            with open('UI/Qt/styles.qss', 'r',encoding='utf-8') as file:
                 return file.read()
         # 加载外部样式文件并应用
         stylesheet = loadStyleSheet('styles.qss')

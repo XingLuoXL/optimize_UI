@@ -11,7 +11,7 @@ QWidget {
 
 /* centralWidget背景图片样式 - 新增规则应放在这里 */
 #centralwidget {
-    background-image: url("UI/ui/UAV.jpg");
+    background-image: url("UI/Qt/UAV.jpg");
     background-color: rgba(255, 255, 255, 0.5);
     background-repeat: no-repeat;
     background-position: center center;
