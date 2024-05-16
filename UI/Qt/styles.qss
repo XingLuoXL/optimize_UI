@@ -17,8 +17,9 @@ QWidget {
     background-position: center center;
     background-origin: content;
     background-attachment: fixed;
-     background-size: cover;
+    background-size: cover;
 }
+
 /* QLabel样式 */
 QLabel {
     margin-bottom: 10px; /* 增大行间距 */

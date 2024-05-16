@@ -1,6 +1,7 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
 from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget
-from PyQt6.QtGui import QIcon
+from PyQt6.QtGui import QIcon,QPalette, QBrush, QImage
+from PyQt6.QtCore import Qt
 import random
 import string
 import sm2
@@ -175,7 +176,8 @@ class Ui_MainWindow(object):
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-
+        
+        
         # 创建一个网格布局
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
