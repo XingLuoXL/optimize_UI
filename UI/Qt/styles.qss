@@ -11,8 +11,8 @@ QWidget {
 
 /* centralWidget背景图片样式 - 新增规则应放在这里 */
 #centralwidget {
-    background-image: url("UI/Qt/UAV.jpg");
-    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url("UI\\Qt\\UAV.jpg");
+    background-color: rgba(255, 255, 255, 0.3);
     background-repeat: no-repeat;
     background-position: center center;
     background-origin: content;
@@ -28,8 +28,8 @@ QLineEdit {
     padding: 16px 18px;
     border: 2px solid #FFC107; /* 边框更细，颜色更柔和 */
     border-radius: 18px; /* 圆角更大，现代感更强 */
-    background-color: #FFFDE7;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1; /* 添加轻微阴影 */
+    background-color: #FFFFFF; /* 修改背景颜色为白色 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加轻微阴影 */
 }
 
 /* QPushButton样式 - 增强立体感 */
