@@ -212,19 +212,15 @@ class Ui_MainWindow(object):
         self.lineEdit_2.setFixedWidth(200)
         self.lineEdit_3.setFixedWidth(300) 
         
-        # 创建两个按钮组
-        self.buttonGroup1 = QtWidgets.QButtonGroup(self.centralwidget)
-        self.buttonGroup2 = QtWidgets.QButtonGroup(self.centralwidget)
-
         # 将前两个按钮添加到第一个按钮组
-        self.buttonGroup1.addButton(self.radioButton)
-        self.buttonGroup1.addButton(self.radioButton_2)
+        self.radioGroup1.addButton(self.radioButton)
+        self.radioGroup1.addButton(self.radioButton_2)
 
         # 将后面四个按钮添加到第二个按钮组
-        self.buttonGroup2.addButton(self.radioButton_3)
-        self.buttonGroup2.addButton(self.radioButton_4)
-        self.buttonGroup2.addButton(self.radioButton_5)
-        self.buttonGroup2.addButton(self.radioButton_6)
+        self.radioGroup2.addButton(self.radioButton_3)
+        self.radioGroup2.addButton(self.radioButton_4)
+        self.radioGroup2.addButton(self.radioButton_5)
+        self.radioGroup2.addButton(self.radioButton_6)
     
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
